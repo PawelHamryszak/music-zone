@@ -1,8 +1,6 @@
 const dotenv = require("dotenv");
 dotenv.config();
-const stripe = require("stripe")(
-  "=pk_test_51NADKdBJvrdVzRjQPR1X8KVV9fGhfpRYBycoQ5rYqauaQwlUIFUxvXYd297KZJeFztLqBV2povXFTn6YGDDXsmpZ00tQTvqN4T"
-);
+const stripe = require("stripe")(process.env.REACT_APP_STRIPE_SECRET_KEY);
 exports.handler = async function (event, context) {
   const { cart, shipping_fee, total_amount } = JSON.parse(event.body);
 
