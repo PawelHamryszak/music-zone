@@ -1,7 +1,7 @@
 const dotenv = require("dotenv");
 dotenv.config();
 const stripe = require("stripe")(
-  "sk_test_51N8PKcDnSMd4IMqjGQ9vzTFuq9Vj8Oels6v6Kpt89rqK0lBwcQqlfbezDWkbUxw1uzf84dRtpSmPnaYlBMl8zsHn00sJH61Gjm"
+  "=pk_test_51NADKdBJvrdVzRjQPR1X8KVV9fGhfpRYBycoQ5rYqauaQwlUIFUxvXYd297KZJeFztLqBV2povXFTn6YGDDXsmpZ00tQTvqN4T"
 );
 exports.handler = async function (event, context) {
   const { cart, shipping_fee, total_amount } = JSON.parse(event.body);
