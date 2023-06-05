@@ -1,8 +1,21 @@
-## Customize Project
+#### Run The App Locally
 
-#### .env vars
+```sh
+npm run install && npm start
+```
 
-- REACT_APP_AUTH_DOMAIN=
-- REACT_APP_CLIENT_ID=
-- REACT_APP_STRIPE_PUBLIC_KEY=
-- REACT_APP_STRIPE_SECRET_KEY=
+- visit url http://localhost:3000/
+
+#### Setup React App
+
+```sh
+
+npx create-react-app myApp
+
+```
+
+```sh
+
+npx create-react-app@latest myApp
+
+```
